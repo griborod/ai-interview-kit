@@ -24,9 +24,6 @@ Claude Code, Codex и Cursor.
     шаблоны `AGENTS.md`/`CLAUDE.md` только если их нет; всё прячется через
     `.git/info/exclude`, поэтому в чужой репозиторий не попадает.
   - `--user` — в `~/.agents/skills` с symlink из `~/.claude/skills`.
-- `interview-mode.sh on|off|status` — временно прячет шумные скиллы (Cursor-only,
-  тяжёлые процессные, заменённые этим набором) из `~/.claude/skills`. Двигает
-  только symlink'и, Codex и Cursor не затрагивает.
 - `templates/AGENTS.md` — короткие правила для репозитория задачи;
   `templates/CLAUDE.md` импортирует его (`@AGENTS.md`).
 - `PROMPTS.md` — промпты для трёх случаев: своё окружение, чужое со скиллами,

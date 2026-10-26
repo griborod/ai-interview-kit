@@ -13,18 +13,11 @@
 Накануне, в терминале:
 
 ```bash
-~/scripts/ai-interview-kit/interview-mode.sh on   # спрятать шумные скиллы
 ~/scripts/ai-interview-kit/install.sh --user      # поставить скиллы набора
 ```
 
 На собесе: открыть репозиторий задачи, **новый** чат. Если в репозитории нет
 `AGENTS.md`, поставить шаблон: `install.sh --project .` (не попадёт в git).
-
-После собеса:
-
-```bash
-~/scripts/ai-interview-kit/interview-mode.sh off
-```
 
 ---
 
