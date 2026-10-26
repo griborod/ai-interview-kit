@@ -19,11 +19,10 @@ Claude Code, Codex и Cursor.
 
 ## Файлы
 
-- `install.sh` — установка; ничего не перезаписывает.
-  - `--project <repo>` — в `<repo>/.claude/skills` и `<repo>/.agents/skills`,
-    шаблоны `AGENTS.md`/`CLAUDE.md` только если их нет; всё прячется через
-    `.git/info/exclude`, поэтому в чужой репозиторий не попадает.
-  - `--user` — в `~/.agents/skills` с symlink из `~/.claude/skills`.
+- `skills/<name>/SKILL.md` — сами скиллы. Установка — промптом агенту из
+  `PROMPTS.md`: глобально (`~/.agents/skills` + symlink из `~/.claude/skills`)
+  или в репозиторий задачи (`.claude/skills`, `.agents/skills`, скрыто через
+  `.git/info/exclude`).
 - `templates/AGENTS.md` — короткие правила для репозитория задачи;
   `templates/CLAUDE.md` импортирует его (`@AGENTS.md`).
 - `PROMPTS.md` — промпты для трёх случаев: своё окружение, чужое со скиллами,
