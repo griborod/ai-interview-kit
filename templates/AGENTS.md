@@ -5,13 +5,15 @@ Rules for AI agents in this repository. Keep it short: task details live in
 
 ## Workflow
 
-1. Before code: **task-spec** → `TASK.md` with acceptance criteria and
+1. Requirements unclear → **clarify**: code map, ranked questions for the
+   stakeholder, mini design.
+2. Before code: **task-spec** → `TASK.md` with acceptance criteria and
    verification commands; get approval.
-2. Plan 3–7 steps, smallest working slice first.
-3. Implement with minimal diffs; **tdd-lite** for core logic, **debug-loop**
+3. Plan 3–7 steps, smallest working slice first.
+4. Implement with minimal diffs; **tdd-lite** for core logic, **debug-loop**
    for failures.
-4. Independent parts → **parallel-agents**.
-5. Before "done": **verify-done**; for non-trivial changes **review-diff**.
+5. Independent parts → **parallel-agents**.
+6. Before "done": **verify-done**; for non-trivial changes **review-diff**.
 
 ## Rules
 

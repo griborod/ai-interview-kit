@@ -12,9 +12,10 @@ all check against the same thing.
 
 1. Read before asking: README, AGENTS.md / CLAUDE.md, package manifest, test
    layout, the code the task touches. Don't ask what the repo can answer.
-2. Ask at most 3 questions, only ones whose answer changes the design. Give a
-   default for each ("I'll assume X unless you say otherwise"). No answer →
-   take the default and record it under Assumptions.
+2. If **clarify** already ran, reuse its answers, assumptions and design — do
+   not ask again. Otherwise ask at most 3 questions, only ones whose answer
+   changes the design. Give a default for each ("I'll assume X unless you say
+   otherwise"). No answer → take the default and record it under Assumptions.
 3. Write `TASK.md` at the repo root from the template below, under ~40 lines.
 4. Show it, get a yes or edits. Then propose a plan of 3–7 steps, smallest
    working slice first.
@@ -36,6 +37,9 @@ all check against the same thing.
 
 ## Invariants
 - <what must stay true whatever happens>
+
+## Design
+- <components, data flow, key interfaces, key decision; from clarify if it ran>
 
 ## Acceptance criteria
 - [ ] AC1 <observable, testable behaviour>
